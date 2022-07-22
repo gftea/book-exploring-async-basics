@@ -124,7 +124,7 @@ struct NodeThread {
 
 We introduced two new types here: `Js` and `ThreadPoolTaskKind`. First we'll cover `ThreadPoolTaskKind`.
 
-In our example, we have three kinds of events: a `FileRead` which is a file that has been read, and an `Encrypt` that represents an operation from our `Crypto` module. The event `Close` is used to let the threads in our `threadpool` that we're closing the loop and let them finish before we exit our process.
+In our example, we have three kinds of events: a `FileRead` which is a file that has been read, and an `Encrypt` that represents an operation from our `Crypto` module. The event `Close` is used to tell the threads in our `threadpool` that we're closing the loop and let them finish before we exit our process.
 
 ## ThreadPoolTaskKind
 
